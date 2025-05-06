@@ -1,0 +1,7 @@
+dir: "{{ .InterfaceDirRelative }}"
+filename: "{{.InterfaceName | camelcase}}_mock.go"
+
+packages:
+  github.com/davidbacisin/mockery-bug:
+    config:
+      all: True
